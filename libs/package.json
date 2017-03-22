@@ -1,0 +1,15 @@
+{
+  "name": "fingerscan-project",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Black T",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "less": "~2.2.0",
+    "browserify": "~8.0.3",
+    "gulp": "~3.8.10",
+    "karma": "~0.12.31"
+  }
+}

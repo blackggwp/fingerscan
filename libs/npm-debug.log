@@ -1,0 +1,377 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'C:\\AppServ\\www\\fingerscan\\libs',
+6 verbose install   [ 'grunt',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'less',
+6 verbose install     'browserify',
+6 verbose install     'gulp',
+6 verbose install     'karma' ] ]
+7 info preinstall fingerscan-project@0.1.0
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'grunt@~0.4.5', null ]
+10 verbose cache add name=undefined spec="grunt@~0.4.5" args=["grunt@~0.4.5",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'grunt@~0.4.5',
+11 verbose parsed url   path: 'grunt@~0.4.5',
+11 verbose parsed url   href: 'grunt@~0.4.5' }
+12 verbose cache add [ 'grunt-contrib-jshint@~0.10.0', null ]
+13 verbose cache add name=undefined spec="grunt-contrib-jshint@~0.10.0" args=["grunt-contrib-jshint@~0.10.0",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'grunt-contrib-jshint@~0.10.0',
+14 verbose parsed url   path: 'grunt-contrib-jshint@~0.10.0',
+14 verbose parsed url   href: 'grunt-contrib-jshint@~0.10.0' }
+15 verbose cache add [ 'grunt-contrib-uglify@~0.5.0', null ]
+16 verbose cache add name=undefined spec="grunt-contrib-uglify@~0.5.0" args=["grunt-contrib-uglify@~0.5.0",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'grunt-contrib-uglify@~0.5.0',
+17 verbose parsed url   path: 'grunt-contrib-uglify@~0.5.0',
+17 verbose parsed url   href: 'grunt-contrib-uglify@~0.5.0' }
+18 verbose cache add [ 'less@~2.2.0', null ]
+19 verbose cache add name=undefined spec="less@~2.2.0" args=["less@~2.2.0",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'less@~2.2.0',
+20 verbose parsed url   path: 'less@~2.2.0',
+20 verbose parsed url   href: 'less@~2.2.0' }
+21 verbose cache add [ 'browserify@~8.0.3', null ]
+22 verbose cache add name=undefined spec="browserify@~8.0.3" args=["browserify@~8.0.3",null]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: 'browserify@~8.0.3',
+23 verbose parsed url   path: 'browserify@~8.0.3',
+23 verbose parsed url   href: 'browserify@~8.0.3' }
+24 verbose cache add [ 'gulp@~3.8.10', null ]
+25 verbose cache add name=undefined spec="gulp@~3.8.10" args=["gulp@~3.8.10",null]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: 'gulp@~3.8.10',
+26 verbose parsed url   path: 'gulp@~3.8.10',
+26 verbose parsed url   href: 'gulp@~3.8.10' }
+27 verbose cache add [ 'karma@~0.12.31', null ]
+28 verbose cache add name=undefined spec="karma@~0.12.31" args=["karma@~0.12.31",null]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: 'karma@~0.12.31',
+29 verbose parsed url   path: 'karma@~0.12.31',
+29 verbose parsed url   href: 'karma@~0.12.31' }
+30 verbose cache add name="grunt" spec="~0.4.5" args=["grunt","~0.4.5"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '~0.4.5',
+31 verbose parsed url   path: '~0.4.5',
+31 verbose parsed url   href: '~0.4.5' }
+32 verbose addNamed [ 'grunt', '~0.4.5' ]
+33 verbose addNamed [ null, '>=0.4.5-0 <0.5.0-0' ]
+34 verbose cache add name="grunt-contrib-jshint" spec="~0.10.0" args=["grunt-contrib-jshint","~0.10.0"]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: '~0.10.0',
+35 verbose parsed url   path: '~0.10.0',
+35 verbose parsed url   href: '~0.10.0' }
+36 verbose addNamed [ 'grunt-contrib-jshint', '~0.10.0' ]
+37 verbose addNamed [ null, '>=0.10.0-0 <0.11.0-0' ]
+38 verbose cache add name="grunt-contrib-uglify" spec="~0.5.0" args=["grunt-contrib-uglify","~0.5.0"]
+39 verbose parsed url { protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: '~0.5.0',
+39 verbose parsed url   path: '~0.5.0',
+39 verbose parsed url   href: '~0.5.0' }
+40 verbose addNamed [ 'grunt-contrib-uglify', '~0.5.0' ]
+41 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+42 verbose cache add name="less" spec="~2.2.0" args=["less","~2.2.0"]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: '~2.2.0',
+43 verbose parsed url   path: '~2.2.0',
+43 verbose parsed url   href: '~2.2.0' }
+44 verbose addNamed [ 'less', '~2.2.0' ]
+45 verbose addNamed [ null, '>=2.2.0-0 <2.3.0-0' ]
+46 verbose cache add name="browserify" spec="~8.0.3" args=["browserify","~8.0.3"]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '~8.0.3',
+47 verbose parsed url   path: '~8.0.3',
+47 verbose parsed url   href: '~8.0.3' }
+48 verbose addNamed [ 'browserify', '~8.0.3' ]
+49 verbose addNamed [ null, '>=8.0.3-0 <8.1.0-0' ]
+50 verbose cache add name="gulp" spec="~3.8.10" args=["gulp","~3.8.10"]
+51 verbose parsed url { protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: '~3.8.10',
+51 verbose parsed url   path: '~3.8.10',
+51 verbose parsed url   href: '~3.8.10' }
+52 verbose addNamed [ 'gulp', '~3.8.10' ]
+53 verbose addNamed [ null, '>=3.8.10-0 <3.9.0-0' ]
+54 verbose cache add name="karma" spec="~0.12.31" args=["karma","~0.12.31"]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '~0.12.31',
+55 verbose parsed url   path: '~0.12.31',
+55 verbose parsed url   href: '~0.12.31' }
+56 verbose addNamed [ 'karma', '~0.12.31' ]
+57 verbose addNamed [ null, '>=0.12.31-0 <0.13.0-0' ]
+58 silly lockFile 240974bb-grunt-0-4-5 grunt@~0.4.5
+59 verbose lock grunt@~0.4.5 D:\Users\Developer\AppData\Roaming\npm-cache\240974bb-grunt-0-4-5.lock
+60 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+61 verbose lock grunt-contrib-jshint@~0.10.0 D:\Users\Developer\AppData\Roaming\npm-cache\956acfd4-grunt-contrib-jshint-0-10-0.lock
+62 silly lockFile 2d901165-grunt-contrib-uglify-0-5-0 grunt-contrib-uglify@~0.5.0
+63 verbose lock grunt-contrib-uglify@~0.5.0 D:\Users\Developer\AppData\Roaming\npm-cache\2d901165-grunt-contrib-uglify-0-5-0.lock
+64 silly lockFile e9e74770-less-2-2-0 less@~2.2.0
+65 verbose lock less@~2.2.0 D:\Users\Developer\AppData\Roaming\npm-cache\e9e74770-less-2-2-0.lock
+66 silly lockFile d845fcc9-browserify-8-0-3 browserify@~8.0.3
+67 verbose lock browserify@~8.0.3 D:\Users\Developer\AppData\Roaming\npm-cache\d845fcc9-browserify-8-0-3.lock
+68 silly lockFile 526cbc63-gulp-3-8-10 gulp@~3.8.10
+69 verbose lock gulp@~3.8.10 D:\Users\Developer\AppData\Roaming\npm-cache\526cbc63-gulp-3-8-10.lock
+70 silly lockFile 5c5f5f5e-karma-0-12-31 karma@~0.12.31
+71 verbose lock karma@~0.12.31 D:\Users\Developer\AppData\Roaming\npm-cache\5c5f5f5e-karma-0-12-31.lock
+72 silly addNameRange { name: 'grunt', range: '>=0.4.5-0 <0.5.0-0', hasData: false }
+73 silly addNameRange { name: 'grunt-contrib-uglify',
+73 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+73 silly addNameRange   hasData: false }
+74 silly addNameRange { name: 'grunt-contrib-jshint',
+74 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+74 silly addNameRange   hasData: false }
+75 silly addNameRange { name: 'browserify',
+75 silly addNameRange   range: '>=8.0.3-0 <8.1.0-0',
+75 silly addNameRange   hasData: false }
+76 silly addNameRange { name: 'gulp', range: '>=3.8.10-0 <3.9.0-0', hasData: false }
+77 silly addNameRange { name: 'karma', range: '>=0.12.31-0 <0.13.0-0', hasData: false }
+78 silly addNameRange { name: 'less', range: '>=2.2.0-0 <2.3.0-0', hasData: false }
+79 verbose request where is /grunt
+80 verbose request registry https://registry.npmjs.org/
+81 verbose request id dda1add9be69045a
+82 verbose url raw /grunt
+83 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+84 verbose url resolved https://registry.npmjs.org/grunt
+85 verbose request where is https://registry.npmjs.org/grunt
+86 info trying registry request attempt 1 at 14:02:26
+87 http GET https://registry.npmjs.org/grunt
+88 verbose request where is /grunt-contrib-uglify
+89 verbose request registry https://registry.npmjs.org/
+90 verbose url raw /grunt-contrib-uglify
+91 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-uglify' ]
+92 verbose url resolved https://registry.npmjs.org/grunt-contrib-uglify
+93 verbose request where is https://registry.npmjs.org/grunt-contrib-uglify
+94 info trying registry request attempt 1 at 14:02:26
+95 http GET https://registry.npmjs.org/grunt-contrib-uglify
+96 verbose request where is /grunt-contrib-jshint
+97 verbose request registry https://registry.npmjs.org/
+98 verbose url raw /grunt-contrib-jshint
+99 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-jshint' ]
+100 verbose url resolved https://registry.npmjs.org/grunt-contrib-jshint
+101 verbose request where is https://registry.npmjs.org/grunt-contrib-jshint
+102 info trying registry request attempt 1 at 14:02:26
+103 http GET https://registry.npmjs.org/grunt-contrib-jshint
+104 verbose request where is /browserify
+105 verbose request registry https://registry.npmjs.org/
+106 verbose url raw /browserify
+107 verbose url resolving [ 'https://registry.npmjs.org/', './browserify' ]
+108 verbose url resolved https://registry.npmjs.org/browserify
+109 verbose request where is https://registry.npmjs.org/browserify
+110 info trying registry request attempt 1 at 14:02:26
+111 http GET https://registry.npmjs.org/browserify
+112 verbose request where is /gulp
+113 verbose request registry https://registry.npmjs.org/
+114 verbose url raw /gulp
+115 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+116 verbose url resolved https://registry.npmjs.org/gulp
+117 verbose request where is https://registry.npmjs.org/gulp
+118 info trying registry request attempt 1 at 14:02:26
+119 http GET https://registry.npmjs.org/gulp
+120 verbose request where is /karma
+121 verbose request registry https://registry.npmjs.org/
+122 verbose url raw /karma
+123 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+124 verbose url resolved https://registry.npmjs.org/karma
+125 verbose request where is https://registry.npmjs.org/karma
+126 info trying registry request attempt 1 at 14:02:26
+127 http GET https://registry.npmjs.org/karma
+128 verbose request where is /less
+129 verbose request registry https://registry.npmjs.org/
+130 verbose url raw /less
+131 verbose url resolving [ 'https://registry.npmjs.org/', './less' ]
+132 verbose url resolved https://registry.npmjs.org/less
+133 verbose request where is https://registry.npmjs.org/less
+134 info trying registry request attempt 1 at 14:02:26
+135 http GET https://registry.npmjs.org/less
+136 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+137 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+138 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+139 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+140 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+141 info trying registry request attempt 2 at 14:02:48
+142 http GET https://registry.npmjs.org/grunt-contrib-uglify
+143 info trying registry request attempt 2 at 14:02:48
+144 http GET https://registry.npmjs.org/grunt-contrib-jshint
+145 info trying registry request attempt 2 at 14:02:48
+146 http GET https://registry.npmjs.org/grunt
+147 info trying registry request attempt 2 at 14:02:48
+148 http GET https://registry.npmjs.org/gulp
+149 info trying registry request attempt 2 at 14:02:48
+150 http GET https://registry.npmjs.org/browserify
+151 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+152 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+153 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+154 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+155 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+156 info trying registry request attempt 2 at 14:03:00
+157 http GET https://registry.npmjs.org/less
+158 info trying registry request attempt 2 at 14:03:00
+159 http GET https://registry.npmjs.org/karma
+160 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+161 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+162 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+163 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+164 info trying registry request attempt 3 at 14:04:00
+165 http GET https://registry.npmjs.org/grunt
+166 info trying registry request attempt 3 at 14:04:00
+167 http GET https://registry.npmjs.org/grunt-contrib-uglify
+168 info trying registry request attempt 3 at 14:04:00
+169 http GET https://registry.npmjs.org/grunt-contrib-jshint
+170 info trying registry request attempt 3 at 14:04:02
+171 http GET https://registry.npmjs.org/browserify
+172 info trying registry request attempt 3 at 14:04:02
+173 http GET https://registry.npmjs.org/gulp
+174 silly lockFile 240974bb-grunt-0-4-5 grunt@~0.4.5
+175 silly lockFile 240974bb-grunt-0-4-5 grunt@~0.4.5
+176 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+177 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+178 silly lockFile 2d901165-grunt-contrib-uglify-0-5-0 grunt-contrib-uglify@~0.5.0
+179 silly lockFile 2d901165-grunt-contrib-uglify-0-5-0 grunt-contrib-uglify@~0.5.0
+180 info trying registry request attempt 3 at 14:04:12
+181 http GET https://registry.npmjs.org/less
+182 info trying registry request attempt 3 at 14:04:12
+183 http GET https://registry.npmjs.org/karma
+184 silly lockFile 526cbc63-gulp-3-8-10 gulp@~3.8.10
+185 silly lockFile 526cbc63-gulp-3-8-10 gulp@~3.8.10
+186 silly lockFile d845fcc9-browserify-8-0-3 browserify@~8.0.3
+187 silly lockFile d845fcc9-browserify-8-0-3 browserify@~8.0.3
+188 silly lockFile e9e74770-less-2-2-0 less@~2.2.0
+189 silly lockFile e9e74770-less-2-2-0 less@~2.2.0
+190 silly lockFile 5c5f5f5e-karma-0-12-31 karma@~0.12.31
+191 silly lockFile 5c5f5f5e-karma-0-12-31 karma@~0.12.31
+192 error network getaddrinfo ENOTFOUND
+192 error network This is most likely not a problem with npm itself
+192 error network and is related to network connectivity.
+192 error network In most cases you are behind a proxy or have bad network settings.
+192 error network
+192 error network If you are behind a proxy, please make sure that the
+192 error network 'proxy' config is set properly.  See: 'npm help config'
+193 error System Windows_NT 6.1.7601
+194 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+195 error cwd C:\AppServ\www\fingerscan\libs
+196 error node -v v0.10.32
+197 error npm -v 1.4.28
+198 error syscall getaddrinfo
+199 error code ENOTFOUND
+200 error errno ENOTFOUND
+201 verbose exit [ 1, true ]
