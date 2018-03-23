@@ -42,14 +42,14 @@ FROM
 WHERE where r >10 and r < 15 RowNumber BETWEEN ".$pg." AND (".$pg." * ".$limit.")
 ORDER BY [nUserID],[nDeviceID],[dtDateTime],[strUserName],[DeviceID],[DeviceName] ";*/
 
-$sql = " SELECT TOP 300 [tb_reportslist].nUserID , 
+$sql = " SELECT [tb_reportslist].nUserID , 
 [tb_reportslist].nDeviceID , 
 (CONVERT(NVARCHAR(24),[tb_reportslist].dtDateTime,120))as dtDateTime , 
 [imp_emp].strUserName , 
 [Device_sukishi].[DeviceName]
-FROM [hr_scan].[dbo].[tb_reportslist] 
-INNER JOIN [hr_scan].[dbo].[imp_emp] ON tb_reportslist.nUserID = imp_emp.[nUserID]
-INNER JOIN [hr_scan].[dbo].[Device_sukishi] ON tb_reportslist.nDeviceID = Device_sukishi.[DeviceID]
+FROM         tb_reportslist INNER JOIN
+                      Device_sukishi ON tb_reportslist.nDeviceID = Device_sukishi.DeviceID LEFT OUTER JOIN
+                      imp_emp ON tb_reportslist.nUserID = imp_emp.nUserID
 WHERE (CONVERT(date, tb_reportslist.dtDateTime)) BETWEEN  '".$q['datestart']."' AND '".$q['dateend']."' ";
 
  if (!empty($empno)){
@@ -59,10 +59,12 @@ WHERE (CONVERT(date, tb_reportslist.dtDateTime)) BETWEEN  '".$q['datestart']."' 
 	$sql .= " AND tb_reportslist.nDeviceID in (".$in.")";	 
  }
 $sql .= " AND (nEvent NOT IN ('23')) order by dtDateTime ";
-/*echo $sql . "<hr>";*/
+// echo $sql . "<hr>";
 /*echo 'pg= '.$pg.':   limit= '.$limit ;*/
-
-echo "<table class='table table-striped table-hover' id='tblExport'>
+if ($numRows != 0) {
+	# code...
+}
+$table = "<table class='table table-striped table-hover' id='tblExport'>
 		<thead>
 			<tr class='rowheader'>
 				<th>วันเวลา</th>
@@ -72,27 +74,24 @@ echo "<table class='table table-striped table-hover' id='tblExport'>
 				<th>ชื่อพนักงาน</th>
 			</tr>
 		</thead>";
-echo "<tbody>";
-// while($row = mssql_fetch_assoc($query))
-// {
-//     echo "<tr class='rowcontent'>";
-// 		echo "<td>".date_format(new DateTime($row[dtDateTime]),'d/m/Y - H:i:s')."</td>";
-//   		echo "<td>".$row[nDeviceID]."</td>";
-// 		echo "<td>".$deviceName = iconv('tis-620','utf-8',$row[DeviceName])."</td>";
-// 		echo "<td>".$row[nUserID]."</td>";
-// 		echo "<td>".$userName = iconv('tis-620','utf-8',$row[strUserName])."</td>";
-//  	echo "</tr>";
-// }
+$table .= "<tbody>";
+
+$numRows = 0;
 foreach ($conn->query($sql) as $row) {
-        echo "<tr class='rowcontent'>";
-		echo "<td>".date_format(new DateTime($row[dtDateTime]),'d/m/Y - H:i:s')."</td>";
-  		echo "<td>".$row[nDeviceID]."</td>";
-		echo "<td>".$row[DeviceName]."</td>";
-		echo "<td>".$row[nUserID]."</td>";
-		echo "<td>".$row[strUserName]."</td>";
- 	echo "</tr>";
+	$numRows++;
+        $table .= "<tr class='rowcontent'>";
+		$table .= "<td>".date_format(new DateTime($row[dtDateTime]),'d/m/Y - H:i:s')."</td>";
+  		$table .= "<td>".$row[nDeviceID]."</td>";
+		$table .= "<td>".$row[DeviceName]."</td>";
+		$table .= "<td>".$row[nUserID]."</td>";
+		$table .= "<td>".$row[strUserName]."</td>";
+ 	$table .= "</tr>";
     }
-echo "</tbody>";
-echo "</table>";
+$table .= "</tbody>";
+$table .= "</table>";
+$rows = "<div style='float:right;'><h3>CountRows: ".$numRows."</h3></div>";
+echo $rows;
+echo $table;
+
 // mssql_close($connmssql);
 ?>

@@ -15,7 +15,10 @@
       <script type="text/javascript" src="jqueryui/jquery-ui-timepicker-addon.min.js"></script>
       
       <script type="text/javascript" src="js/tableToExcel.js"></script>
-  	
+  	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <style>
+  font-family: 'Kanit', sans-serif;
+</style>
     </head>
   <body>
 
@@ -84,14 +87,14 @@
 
       
       <tr class="txtinput">
-        <td><div class="divdatestart"><label>จากวันที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" readonly="readonly" class="cstart" id="datestart" value="<?php echo date('d-m-Y'); ?>" /><br></div>
+        <td><div class="divdatestart"><label>จากวันที่</label>
+        <input type="text" readonly="readonly" class="cstart userInput" id="datestart" value="<?php echo date('d-m-Y'); ?>" /><br></div>
         		
-              <div class="divdateend"><label>ถึงวันที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" readonly="readonly" class="cend" id="dateend" value="<?php echo date('d-m-Y'); ?>" /><br></div>
+              <div class="divdateend"><label>ถึงวันที่</label>
+        <input type="text" readonly="readonly" class="cend userInput" id="dateend" value="<?php echo date('d-m-Y'); ?>" /><br></div>
         
-      	<div class="empinput"><label>รหัสพนักงาน&nbsp;&nbsp;&nbsp;</label>
-          <input type="text" name="empno" id="empno" placeholder="ใส่รหัสพนักงาน.."><br></div>
+      	<div class="empinput"><label>รหัสพนักงาน</label>
+          <input type="text" name="empno" class="userInput" id="empno" placeholder="ใส่รหัสพนักงาน.."><br></div>
           
           <div class="search"><a class="loadfile btn btn-primary btn-sm" id="searchbtn"
       	data-f="form/grid.php"

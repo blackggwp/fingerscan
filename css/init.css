@@ -1,83 +1,4 @@
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(1.5); /* IE */
-  -moz-transform: scale(1.5); /* FF */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-  -o-transform: scale(1.5); /* Opera */
-}
-div#header{
-	background-color:#C60000;
-	height:85px;
-}
-table.tboutlet{
-	background-color:#CCC;
-	text-align:center;
-}
-.tdoutlet td{
-	text-align:left;
-	line-height:30px;
-	font-size:14px;
-    white-space: nowrap;
-}
-div.chkoutlet{
-	border-radius:10px;
-	line-height:30px;
-    background-color:#CCC;
-    height:300px;
-    width:270px;
-    float:left;
-    margin-left:10px;
-    padding-left:10px;
-    padding-right:50px;
-	overflow-y:scroll;
-	overflow-x:hidden;
-}
-tr.txtinput{
-	border-radius:10px;
-	margin-top:20px;
-	float:left;
-}
-div.divdatestart{
-}
-div.divdateend{
-	margin-top:5px;
-}
-div.empinput{
-	margin-top:10px;
-	
-}
-div.search{
-	margin-top:10px;
-	margin-left:110px;
-}
-td.content{
-	position: absolute;
-	margin-left:10px;
-	padding-right:20px;
-}
-tr.rowheader th{
-	padding: 20px 5%;
-	background-color: #3fb618;
-	color:#FFF;
-  	text-align:left;
-	width:auto;
-}
-tr.rowcontent td{
-	width:auto;
-	white-space: nowrap;	
-}
-tr.rowcontent:nth-child(even){
-	background:#C8E8CA;
-}
-.btnExport{
-	float:right;
-	margin:10px;
-}
-
-
-
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+/*@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");*/
 /*!
  * bootswatch v3.3.1+2
  * Homepage: http://bootswatch.com
@@ -92,7 +13,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-	
   margin: 0;
 }
 article,
@@ -6566,3 +6486,86 @@ a.list-group-item-danger.active:focus {
   color: #333333;
 }
 
+/*customize CSS*********************************/
+body {
+  font-family: 'Kanit', sans-serif;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+}
+div#header{
+  background-color:#C60000;
+  height:85px;
+}
+table.tboutlet{
+  background-color:#CCC;
+  text-align:center;
+}
+.tdoutlet td{
+  text-align:left;
+  line-height:30px;
+  font-size:14px;
+    white-space: nowrap;
+}
+div.chkoutlet{
+  border-radius:10px;
+  line-height:30px;
+    background-color:#CCC;
+    height:300px;
+    width:270px;
+    float:left;
+    margin-left:10px;
+    padding-left:10px;
+    padding-right:50px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+tr.txtinput{
+  border-radius:10px;
+  margin-top:20px;
+  float:left;
+}
+div.divdatestart{
+}
+div.divdateend{
+  margin-top:5px;
+}
+div.empinput{
+  margin-top:10px;
+  
+}
+div.search{
+  margin-top:10px;
+  margin-left:110px;
+}
+td.content{
+  position: absolute;
+  margin-left:10px;
+  padding-right:20px;
+}
+tr.rowheader th{
+  padding: 20px 5%;
+  background-color: #3fb618;
+  color:#FFF;
+    text-align:left;
+  width:auto;
+}
+tr.rowcontent td{
+  width:auto;
+  white-space: nowrap;  
+}
+tr.rowcontent:nth-child(even){
+  background:#C8E8CA;
+}
+.btnExport{
+  float:right;
+  margin:10px;
+}
+.userInput {
+  float: right;
+}
