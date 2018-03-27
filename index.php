@@ -28,7 +28,7 @@
 
   <div id="header">
   	<div class="container">
-  	<div class="headerImg"><img src="img/logo.png" width="200" height="110"/></div>
+  	<div class="headerImg"><a href="../landing.php"><img src="img/logo.png"  width="200" height="110"/></a></div>
   	</div>
   </div>
 
