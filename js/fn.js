@@ -92,14 +92,15 @@ $(".selectall",$fm).unbind("click").bind("click", function() {
 
 });	
 
-$(".loadfile",$fm).unbind("click").bind("click", function() {		
-						  
+$(".loadfile",$fm).unbind("click").bind("click", function() {
+	var empCode = $('#empCode').val();
+	// check empCode
+if ((empCode != '') && (empCode.length == 6) ) {
  var $t=$(this);
  var f=$t.data('f');
  var p=$t.data('p');
  var form=$t.data('form');
  var $p=$(p);
- var empno=$('#empno').val();
  var datestart=$('#datestart').val();
  var dateend=$('#dateend').val();
  var $frm=$(form);
@@ -110,7 +111,7 @@ $(".loadfile",$fm).unbind("click").bind("click", function() {
  datestart=a[1]+'-'+a[0]+'-'+a[2];
  dateend=b[1]+'-'+b[0]+'-'+b[2];
  
- var dpr = $frm.serialize()+"&empno="+empno+"&datestart="+datestart+"&dateend="+dateend+"&page="+$t.data('page');
+ var dpr = $frm.serialize()+"&empCode="+empCode+"&datestart="+datestart+"&dateend="+dateend+"&page="+$t.data('page');
  
 ////////Preloader
   	var h='<div class="loading"><img src="img/load.gif"></div>';
@@ -120,6 +121,11 @@ $(".loadfile",$fm).unbind("click").bind("click", function() {
 	$("#btnExport").show();
 	  initevent($p);
 	});
+
+}else{
+	alert('กรุณาระบุรหัสพนักงานให้ถูกต้อง');
+	return;
+}
 });
 
 var outlet = $(':checkbox.chkoutlet').val();
@@ -130,20 +136,24 @@ $('.init0',$fm).each(function(){
 	 $t.click();
 });
 
+
 }
 
 //Key press
 $(document).keydown(function(e){
+	var empCode = $('#empCode').val();
+	if ((empCode != '') && (empCode.length == 6) ) {
 	var key = event.which || event.charCode || event.keyCode || 0;
 	//enter key
 	if(key == 13)
 	{
 		$('#searchbtn').click();
 		event.preventDefault();
+		
 	}
 	var h='<div class="loading"><img src="img/preloader.gif"></div>';
 	$p.html(h);
- 	
+	}
 });
 
 

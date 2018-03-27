@@ -1,0 +1,94 @@
+/*Fingerscan CSS*********************************/
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+body {
+  font-family: 'Kanit', sans-serif;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+}
+div#header{
+  background-color:#C60000;
+  height:85px;
+}
+table.tboutlet{
+  background-color:#CCC;
+  border-radius: 10px;
+  /* text-align:center; */
+}
+.tdoutlet td{
+  text-align:left;
+  line-height:30px;
+  font-size:14px;
+    white-space: nowrap;
+}
+div.chkoutlet{
+  border-radius:10px;
+  line-height:30px;
+    background-color:#CCC;
+    height:300px;
+    width:270px;
+    float:left;
+    margin-left:10px;
+    padding-left:10px;
+    padding-right:50px;
+}
+tr.txtinput{
+  border-radius:10px;
+  margin-top:20px;
+  float:left;
+}
+div.divdatestart{
+}
+div.divdateend{
+  margin-top:5px;
+}
+div.empinput{
+  margin-top:10px;
+  
+}
+div.search{
+  margin:10px;
+}
+td.content{
+  position: absolute;
+  margin-left:10px;
+  padding-right:20px;
+}
+tr.rowheader th{
+  background-color: #3fb618;
+  color:#FFF;
+  text-align:left;
+  padding: .4em .4em .4em .4em;
+  min-width: 120px;
+  max-width: 120px;
+}
+tr.rowcontent td{
+  width:auto;
+  white-space: nowrap;
+}
+tr.rowcontent:nth-child(even){
+  background:#C8E8CA;
+}
+.btnExport{
+  float:right;
+  margin:10px;
+}
+#submit_btn {
+  display: none;
+}
+#home_panel {
+  margin-top: 50px;
+}
+#outlet_panel {
+  height: 400px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.hasDatepicker {
+  cursor: pointer;
+}
