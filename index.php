@@ -83,10 +83,10 @@
             <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" 
             readonly="readonly" class="cend userInput" id="dateend" value="<?php echo date('d-m-Y'); ?>" />
             <br>
-            <label for="empCode" class="empCode error">รหัสพนักงาน</label>
+            <label for="empCode" class="empCode-error">รหัสพนักงาน</label>
             <br>
             <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" 
-            name="empCode" class="userInput" id="empCode" placeholder="ใส่รหัสพนักงาน.." required>
+            name="empCode" class="userInput" id="empCode" placeholder="ใส่รหัสพนักงาน..">
           <!-- <input type="number" name="empCode" class="userInput" id="empCode" placeholder="ใส่รหัสพนักงาน.." required> -->
           <br>
           </div>

@@ -95,7 +95,8 @@ $(".selectall",$fm).unbind("click").bind("click", function() {
 $(".loadfile",$fm).unbind("click").bind("click", function() {
 	var empCode = $('#empCode').val();
 	// check empCode
-if ((empCode != '') && (empCode.length == 6) ) {
+// if ((empCode != '') && (empCode.length == 6) ) {
+if ((empCode == '') || (empCode.length == 6) ) {
  var $t=$(this);
  var f=$t.data('f');
  var p=$t.data('p');
@@ -142,7 +143,8 @@ $('.init0',$fm).each(function(){
 //Key press
 $(document).keydown(function(e){
 	var empCode = $('#empCode').val();
-	if ((empCode != '') && (empCode.length == 6) ) {
+	// if ((empCode != '') && (empCode.length == 6) ) {
+	if ((empCode == '') || (empCode.length == 6) ) {
 	var key = event.which || event.charCode || event.keyCode || 0;
 	//enter key
 	if(key == 13)
